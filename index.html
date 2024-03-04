@@ -4,43 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Responsive Web Developer Starter - devchallenges.io</title>
+    <title>Play Music</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="any">
 </head>
 <body>
-    <header>
-        <div class="get-started">Get started by editting <b>index.html</b></div>
-        <img class="logo" src="images/logo.svg" alt="Main Logo">
-    </header>
 
-    <main>
-        <img src="images/devchallenges-logo.svg" alt="A beautiful landscape">
-        <h3 class="title">Responsive Web Developer Starter</h3>
-    </main>
+    <div class="card">
+        <header class="card__header">
+            <img src="/public/img/cover-1.png" alt="cover" class="card__img" width="350" height="400">
+            <h2 class="card__title"> </h2>
+            <p class="card__artist"></p>
+        </header>
+        <body class="card__body">
+           <div class="card__time">
+             <span class="card__timeI">00:00</span>
+             <span class="card__timeF">03:15</span>
+           </div>
+            <div class="card__logbar">
+                <div class="card__barTtotal">
+                    <div class="card__progress"></div>
+                </div>
+                <audio  class="card__audio"></audio>
+            </div>
 
-    <footer>
-        <a class="link-card" href="https://devchallenges.io/" target="_blank">
-            <div class="link-title">Challenges</div>
-            <div class="link-description">Choose a challenge and start learning by building real-life projects.</div>
-        </a>
+            <div class="card__controls">
+                <img src="/public/img/svg/Stop_and_play_fill-1.svg" alt="play" class="card__prev">
+                <img src="/public/img/svg/Play_fill.svg" alt="" class="card__play">
+                <img src="/public/img/svg/Stop_and_play_fill.svg" alt="pause" class="card__next">
+            </div>
+            
+        </body>
+    </div>
 
-        <a class="link-card" href="https://devchallenges.io/challenges" target="_blank">
-            <div class="link-title">Solutions</div>
-            <div class="link-description">Checkout how orders solve the challenges, compare with yours and give them feedback.</div>
-        </a>
 
-        <a class="link-card" href="https://devchallenges.io/" target="_blank">
-            <div class="link-title">Blogs</div>
-            <div class="link-description">Checkout devchallenges blogs, tutorials, updates. Find useful resources to get you started.</div>
-        </a>
+   
 
-        <a class="link-card" href="https://devchallenges.io/" target="_blank">
-            <div class="link-title">Deploy</div>
-            <div class="link-description">How to deploy and submit your solution.</div>
-        </a>
-       
-    </footer>
-
-    <script src="script.js"></script>
+    <script type="module" src="/js/script.js"></script>
 </body>
 </html>
